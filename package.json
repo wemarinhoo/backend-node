@@ -1,0 +1,15 @@
+{
+  "name": "projeto-web",
+  "version": "1.0.0",
+  "description": "Projeto Web - MVC",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon server.js"
+  },
+  "author": "Eduardo Tavares",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
