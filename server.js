@@ -1,14 +1,16 @@
 const express = require("express");
-
 const app = express();
-app.use(express.static("public"));
+
 
 const { bootstrapApp } = require('./app/bootstrap');
 
+app.use(express.json());
+app.use(express.urlencoded({extended: true}))
+
 bootstrapApp(app);
 
-app.listen(80, () => {
-  console.log("Server is running on port http://localhost:80");
+const PORT = 3000;
+
+app.listen(PORT, function() {
+    console.log(`Servidor web iniciado: http://localhost:${PORT}/`);
 });
-
-

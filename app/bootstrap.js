@@ -1,12 +1,29 @@
+const path = require('path');
+const express = require("express");
 
-const webRoutes = require("../routes/web");
+const { sequelize, createDatabase } = require('./core/sequelize');
+const Models = require('./models');
+createDatabase(sequelize);
 
-exports.bootstrapApp = function (app) {
+const useHelpers = require("./core/helpers");
+const useRouters = require("./core/routers");
+const useSessions = require("./core/routers");
 
+exports.bootstrapApp = function(app) {
+  app.locals.app_path = path.join(__dirname, '..');
+  app.locals.public_path = path.join(app.locals.app_path, "/public");
+  app.locals.views_path = path.join(app.locals.app_path, "/views");
+  app.locals.includes_path = path.join(app.locals.views_path, "/includes");
+
+  
+  app.use(express.static(app.locals.public_path));
   app.set("view engine", "ejs");
   app.set("views", [
-    "pages",
+    app.locals.views_path,
+    app.locals.includes_path
   ]);
-
-  app.use("/", webRoutes);
+  
+  useHelpers(app);
+  useRouters(app);
+  useSessions(app);
 }

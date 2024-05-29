@@ -1,19 +1,26 @@
 {
-  "name": "projeto-web",
+  "name": "projetoweb",
   "version": "1.0.0",
-  "description": "Projeto Web - MVC",
+  "description": "Servidor Web",
   "main": "server.js",
   "scripts": {
-    "test": "jest",
-    "start": "nodemon server.js"
+    "test": "jest --verbose",
+    "start": "nodemon server.js",
+    "pm2": "pm2 start server.js --name projetoweb --watch"
   },
-  "author": "Eduardo Tavares",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^4.19.2"
+    "axios": "^1.6.0",
+    "bcrypt": "^5.1.0",
+    "dayjs": "^1.11.7",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.3",
+    "sequelize": "^6.32.0",
+    "sqlite3": "^5.1.6"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.1"
   }
 }
