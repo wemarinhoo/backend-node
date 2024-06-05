@@ -17,6 +17,12 @@ function NavegacaoController() {
             title: "Sobre a empresa"
         });
     }
+    
+    function agenda(request, response) {
+        return response.render("agenda", {
+            title: "Agendas"
+        });
+    }
 
 
     function notFound(request, response) {
