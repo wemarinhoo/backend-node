@@ -52,22 +52,12 @@ function AgendasRepository() {
     await Agenda.destroy({ where: { id: id } });
   }
 
-  function updateStatus(id, status) {
-    const agenda = {
-      done: status,
-    }
-
- 	  const agenda_updated = Agenda.update(agenda, { where: { id: id } });
-    return agenda_updated;
-  }
-
   return {
     list,
     find,
     save,
     remove,
     update,
-    updateStatus,
   }
 
 }
