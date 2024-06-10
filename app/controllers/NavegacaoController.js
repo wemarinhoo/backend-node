@@ -33,9 +33,9 @@ function NavegacaoController() {
         usuarios,
         sobre,
         index,
+        agenda,
         notFound
     }
-
 }
 
 module.exports = NavegacaoController();
