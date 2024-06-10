@@ -35,7 +35,6 @@ router.get('/', NavegacaoController.index);
 router.get('/sobre', NavegacaoController.sobre);
 router.get('/agenda', NavegacaoController.agenda)
 
-
 router.get('*', function notFound(request, response) {
     return response.render("404");
 });
