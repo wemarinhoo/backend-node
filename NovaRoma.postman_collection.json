@@ -7,12 +7,12 @@
 	},
 	"item": [
 		{
-			"name": "Listar Tarefas",
+			"name": "Listar Contatos",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/tasks",
+					"raw": "http://localhost:3000/api/agendas",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -20,14 +20,14 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"tasks"
+						"Agendas"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Mostrar Tarefa",
+			"name": "Mostrar Agenda",
 			"event": [
 				{
 					"listen": "test",
@@ -50,7 +50,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/tasks/3",
+					"raw": "http://localhost:3000/api/agendas/3",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -58,7 +58,7 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"tasks",
+						"Agendas",
 						"3"
 					]
 				}
@@ -66,7 +66,7 @@
 			"response": []
 		},
 		{
-			"name": "Adicionar Tarefa",
+			"name": "Adicionar Agenda",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -80,7 +80,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/tasks",
+					"raw": "http://localhost:3000/api/agendas",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -88,14 +88,14 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"tasks"
+						"Agendas"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Atualizar Tarefa",
+			"name": "Atualizar Agenda",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -109,7 +109,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/tasks/61232",
+					"raw": "http://localhost:3000/api/agendas/61232",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -117,7 +117,7 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"tasks",
+						"Agendas",
 						"61232"
 					]
 				}
@@ -125,7 +125,7 @@
 			"response": []
 		},
 		{
-			"name": "Atualizar Status tarefa",
+			"name": "Atualizar Status ",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -139,7 +139,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/tasks/4/update-status",
+					"raw": "http://localhost:3000/api/agendas/4/update-status",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -147,7 +147,7 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"tasks",
+						"Agendas",
 						"4",
 						"update-status"
 					]
@@ -156,12 +156,12 @@
 			"response": []
 		},
 		{
-			"name": "Remover Tarefa",
+			"name": "Remover Agenda",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/tasks/4",
+					"raw": "http://localhost:3000/api/agendas/4",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -169,7 +169,7 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"tasks",
+						"Agendas",
 						"4"
 					]
 				}
