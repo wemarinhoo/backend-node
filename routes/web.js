@@ -29,11 +29,10 @@ router.post("/agendas/save", AgendasController.save);
 router.post("/agendas/remove/:id", AgendasController.remove);
 router.get("/agendas/edit/:id", AgendasController.edit);
 router.post("/agendas/update", AgendasController.update);
-router.post("/agendas/update-status/:id", AgendasController.updateStatus);
 
 router.get('/', NavegacaoController.index);
 router.get('/sobre', NavegacaoController.sobre);
-router.get('/agenda', NavegacaoController.agenda)
+// router.get('/agendas', NavegacaoController.agenda)
 
 router.get('*', function notFound(request, response) {
     return response.render("404");
