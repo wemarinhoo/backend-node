@@ -1,7 +1,7 @@
-const Agenda = require("../models/Task");
+const Agenda = require("../models/Agenda");
 const agendasRepository = require("../repositories/AgendasRepository");
 
-function AgendaController() {
+function AgendasController() {
   async function list(req, res) {
     const agendas = await agendasRepository.list();
 
@@ -45,4 +45,4 @@ function AgendaController() {
   };
 }
 
-module.exports = AgendaController();
+module.exports = AgendasController();

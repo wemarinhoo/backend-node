@@ -19,7 +19,7 @@ function NavegacaoController() {
     }
     
     function agenda(request, response) {
-        return response.render("agenda", {
+        return response.render("agendas", {
             title: "Agendas"
         });
     }
