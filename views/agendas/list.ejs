@@ -1,30 +1,30 @@
 <%- include("includes/header"); %>
 
 <div class="container">
-    <h3>Lista de Contatos</h3>
+    <h3 style="color:#fff">Lista de Contatos</h3>
     <div>
         <a type="button" class="btn btn-primary" href="/agendas/create">Adicionar Contato</a>
     </div>
     <table class="table">
         <thead>
             <tr>
-                <th>Nome</th>
-                <th>Celular</th>
-                <th>Email</th>
-                <th>Opções</th>
+                <th style="color: #fff">Nome</th>
+                <th style="color: #fff">Celular</th>
+                <th style="color: #fff">Email</th>
+                <th style="color: #fff">Opções</th>
             </tr>
         </thead>
         <tbody>
             <% for(const agenda of agendas) { %>
                 <tr>
                     <td>
-                        <%= agenda.name %>
+                        <h6 style="color: #9e9e9e;"><%= agenda.name %></h6>
                     </td>
                     <td>
-                        <%= agenda.phoneNumber %>
+                        <h6 style="color: #9e9e9e;"><%= agenda.phoneNumber %></h6>
                     </td>
                     <td>
-                        <%= agenda.email %>
+                       <h6 style="color: #9e9e9e;"><%= agenda.email %></h6>
                     </td>
                     <td>
                         <a class="btn btn-success" href="/agendas/edit/<%= agenda.id %>">Editar</a>

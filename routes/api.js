@@ -20,7 +20,6 @@ router.post('/agendas', AgendasController.save)
 router.delete('/agendas/:id', AgendasController.remove)
 router.put('/agendas/:id', AgendasController.update)
 
-
 router.get('/users', UsersController.list)
 router.post('/users/login', UsersController.login)
 router.get('/users/:id', TasksController.show)

@@ -58,7 +58,7 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"Agendas",
+						"agendas",
 						"3"
 					]
 				}
@@ -88,7 +88,7 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"Agendas"
+						"agendas"
 					]
 				}
 			},
@@ -117,7 +117,7 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"Agendas",
+						"agendas",
 						"61232"
 					]
 				}
@@ -147,7 +147,7 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"Agendas",
+						"agendas",
 						"4",
 						"update-status"
 					]
@@ -169,7 +169,7 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"Agendas",
+						"agendas",
 						"4"
 					]
 				}
