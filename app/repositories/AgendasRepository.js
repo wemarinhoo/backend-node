@@ -3,12 +3,12 @@ const Agenda = require('../models/Agenda');
 function AgendasRepository() {
 
   async function list() {
-    const agendas = await Task.findAll({ raw: true });
+    const agendas = await Agenda.findAll({ raw: true });
     return agendas;
   }
 
   async function find(id) {
-    const agenda = await Task.findByPk(id);
+    const agenda = await Agenda.findByPk(id);
     return agenda;
   }
 
